@@ -45,25 +45,27 @@ function App() {
       />
 
       <main className="content">
-        <header className="content__header">
-          <div className="content__count">
-            {filteredProjects.length} project{filteredProjects.length !== 1 ? 's' : ''}
-          </div>
-        </header>
+        <div className="content__inner">
+          <header className="content__header">
+            <div className="content__count">
+              {filteredProjects.length} project{filteredProjects.length !== 1 ? 's' : ''}
+            </div>
+          </header>
 
-        <div className="card-grid">
-          {filteredProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              onClick={() => setSelectedProject(project)}
-            />
-          ))}
-          {filteredProjects.length === 0 && (
-            <p className="empty-state">
-              No projects match the selected filters.
-            </p>
-          )}
+          <div className="card-grid">
+            {filteredProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                onClick={() => setSelectedProject(project)}
+              />
+            ))}
+            {filteredProjects.length === 0 && (
+              <p className="empty-state">
+                No projects match the selected filters.
+              </p>
+            )}
+          </div>
         </div>
       </main>
 
