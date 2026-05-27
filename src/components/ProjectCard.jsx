@@ -1,13 +1,11 @@
-export default function ProjectCard({ project, onClick }) {
-  const thumbnail = project.images[0];
+import Wireframe from './Wireframe';
 
+export default function ProjectCard({ project, onClick }) {
   return (
     <article className="project-card" onClick={onClick}>
-      {thumbnail && (
-        <div className="project-card__image">
-          <img src={thumbnail} alt={project.title} loading="lazy" />
-        </div>
-      )}
+      <div className="project-card__wireframe">
+        <Wireframe projectId={project.id} />
+      </div>
       <div className="project-card__content">
         <div className="project-card__meta">
           <span className="project-card__industry">{project.industry}</span>
