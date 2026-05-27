@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import './styles/tokens.css';
 import './styles/App.css';
 import { projects } from './data/projects';
-import FilterBar from './components/FilterBar';
+import Sidebar from './components/Sidebar';
 import ProjectCard from './components/ProjectCard';
 import DetailPanel from './components/DetailPanel';
 
@@ -37,31 +37,34 @@ function App() {
 
   return (
     <div className="app">
-      <header className="header">
-        <h1 className="header__name">Steve Sutanto</h1>
-        <p className="header__title">Product Designer and Strategist</p>
-      </header>
-
-      <FilterBar
+      <Sidebar
         activeIndustry={activeIndustry}
         activeCategory={activeCategory}
         onIndustryChange={setActiveIndustry}
         onCategoryChange={setActiveCategory}
       />
 
-      <main className="card-grid">
-        {filteredProjects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            onClick={() => setSelectedProject(project)}
-          />
-        ))}
-        {filteredProjects.length === 0 && (
-          <p style={{ gridColumn: '1 / -1', color: 'var(--fg-3)', font: 'var(--type-body-2)' }}>
-            No projects match the selected filters.
-          </p>
-        )}
+      <main className="content">
+        <header className="content__header">
+          <div className="content__count">
+            {filteredProjects.length} project{filteredProjects.length !== 1 ? 's' : ''}
+          </div>
+        </header>
+
+        <div className="card-grid">
+          {filteredProjects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={() => setSelectedProject(project)}
+            />
+          ))}
+          {filteredProjects.length === 0 && (
+            <p className="empty-state">
+              No projects match the selected filters.
+            </p>
+          )}
+        </div>
       </main>
 
       {selectedProject && (
