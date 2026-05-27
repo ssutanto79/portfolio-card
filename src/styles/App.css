@@ -139,6 +139,7 @@ body {
   background: #f8f8f7;
   min-height: 100vh;
   padding: 32px 40px;
+  max-width: 1024px;
 }
 
 .content__header {
@@ -237,11 +238,18 @@ body {
   overflow: hidden;
 }
 
+.project-card__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: auto;
+  gap: 16px;
+}
+
 .project-card__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto;
 }
 
 .tag {
@@ -251,6 +259,33 @@ body {
   border-radius: 100px;
   background: var(--bg-2);
   color: var(--fg-2);
+}
+
+.project-card__arrow {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.project-card__arrow svg {
+  width: 16px;
+  height: 16px;
+  color: var(--fg-3);
+  transition: color 0.2s ease;
+}
+
+.project-card:hover .project-card__arrow {
+  background: var(--color-primary);
+}
+
+.project-card:hover .project-card__arrow svg {
+  color: white;
 }
 
 /* ─── Detail Overlay ─── */
