@@ -1,0 +1,127 @@
+:root {
+  /* Brand Ramp (derived from #005EB8) */
+  --brand-10: #061724;
+  --brand-20: #0a2744;
+  --brand-30: #0e3a66;
+  --brand-40: #124d88;
+  --brand-50: #16589a;
+  --brand-60: #1a64ac;
+  --brand-70: #1e70be;
+  --brand-80: #005eb8;
+  --brand-90: #3a8fd4;
+  --brand-100: #5aa3de;
+  --brand-110: #7ab7e8;
+  --brand-120: #9acbf2;
+  --brand-130: #b4d9f6;
+  --brand-140: #cee7fa;
+  --brand-150: #e0f0fc;
+  --brand-160: #ebf3fc;
+
+  /* Primary Palette */
+  --color-primary: #005eb8;
+  --color-dark-grey: #333f48;
+  --color-medium-grey: #888b8d;
+  --color-light-grey: #d9d9d6;
+  --color-white: #ffffff;
+
+  /* Accent */
+  --color-accent: #fdda24;
+
+  /* Tertiary */
+  --color-dark-blue: #003865;
+  --color-light-teal: #68d2df;
+  --color-sky-blue: #00a5df;
+
+  /* Neutrals */
+  --neutral-2: #f5f5f4;
+  --neutral-4: #ebebea;
+  --neutral-6: #e0e0de;
+  --neutral-8: #d4d4d1;
+  --neutral-10: #c8c8c5;
+  --neutral-12: #b0b0ad;
+  --neutral-14: #8a8a88;
+  --neutral-16: #636361;
+  --neutral-18: #3d3d3c;
+  --neutral-20: #1a2730;
+  --color-black: #000000;
+
+  /* Semantic - Backgrounds */
+  --bg-1: #ffffff;
+  --bg-2: #f5f5f4;
+  --bg-3: #ebebea;
+  --bg-subtle: #f5f5f4;
+  --bg-inverted: #333f48;
+  --bg-brand-1: #005eb8;
+  --bg-brand-2: #003865;
+
+  /* Semantic - Foregrounds */
+  --fg-1: #333f48;
+  --fg-2: #636361;
+  --fg-3: #8a8a88;
+  --fg-disabled: #b0b0ad;
+  --fg-inverted: #ffffff;
+  --fg-link: #005eb8;
+
+  /* Semantic - Strokes */
+  --stroke-1: #d9d9d6;
+  --stroke-2: #e0e0de;
+  --stroke-focus: #005eb8;
+
+  /* Status */
+  --status-success: #107c10;
+  --status-warning: #f7630c;
+  --status-danger: #d13438;
+
+  /* Spacing */
+  --space-none: 0px;
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-s-nudge: 6px;
+  --space-s: 8px;
+  --space-m-nudge: 10px;
+  --space-m: 12px;
+  --space-l: 16px;
+  --space-xl: 20px;
+  --space-xxl: 24px;
+  --space-xxxl: 32px;
+
+  /* Corner Radius */
+  --radius-none: 0px;
+  --radius-small: 2px;
+  --radius-medium: 4px;
+  --radius-large: 6px;
+  --radius-xlarge: 8px;
+  --radius-circular: 9999px;
+
+  /* Stroke Width */
+  --stroke-thin: 1px;
+  --stroke-thick: 2px;
+  --stroke-thicker: 3px;
+  --stroke-thickest: 4px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 8px 16px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.06);
+  --shadow-overlay: 0 16px 48px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --type-display: 600 68px/92px var(--font-family);
+  --type-large-title: 300 40px/56px var(--font-family);
+  --type-title-1: 300 32px/40px var(--font-family);
+  --type-title-2: 300 28px/36px var(--font-family);
+  --type-title-3: 400 24px/32px var(--font-family);
+  --type-subtitle-1: 500 20px/28px var(--font-family);
+  --type-subtitle-2: 500 16px/22px var(--font-family);
+  --type-body-1: 400 14px/20px var(--font-family);
+  --type-body-1-strong: 600 14px/20px var(--font-family);
+  --type-body-2: 400 16px/22px var(--font-family);
+  --type-caption-1: 400 12px/16px var(--font-family);
+  --type-caption-1-strong: 600 12px/16px var(--font-family);
+  --type-caption-2: 400 10px/14px var(--font-family);
+}
